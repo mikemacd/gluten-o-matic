@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gluten for Punishment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.toJSON.min.js"></script>
+
+        <script type="text/javascript">
+        function checkForm() {
+            console&&console.log('check called');
+            $.ajax({
+                    url:        "check.php"
+                    , type:     'POST'
+                    , data:     $('#theForm').toJSON()
+                    , datatype: "json"
+                    , success:  function(data) {
+                        console&&console.log(data);
+                    }
+                }
+            );
+
+        }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Gluten for Punishment</h1>
+
+        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> have gluten,gluten containing ingredients, or ingredients which may have come into contact with gluten.</p>
+
+        <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. You assume full responsibilty for the consequences of any decisions you make based on the response of this tool.</p>
+
+        <h2>Features</h2>
+
+        <ul>
+            <li>Mark, as bold, which terms were found</li>
+        </ul>
+
+
+        <form action="#" id="theForm" method="post">
+            <input type="button" name="check" value="check" onclick="checkForm()">
+            <label>
+                <p>Enter the list of ingredients you would like to check</p>
+                <textarea id="ingredients" name="ingredients" rows="20" cols="100"></textarea>
+                <br>
+            </label>
+        </form>
+
+        <div id="repsonse">
+        </div>
+
+        <?
+        /*
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        */
+        ?>
+    </body>
+</html>
