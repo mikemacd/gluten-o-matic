@@ -9,18 +9,25 @@ foreach ($lines as $badword) {
     $pattern = 
         // beginning of regex
         "/"
-        // one of begining of line or one character that is space comma period dash 0-9 as a word boundry
+        // one of begining of line or one character that is space comma period dash 0-9 parentheses as a word boundry
         ."((?<=^)|(?<=[\s,.-0-9()]))"
+        // not preceded by a bold tag
         ."(?<!<b>)"
+        // capture the word found
         ."("
+        // match the word, escaping any slashes
         . str_replace(
             "/"
             ,"\/"
             , chop($badword) 
         )
+        // end capture the word
         .")"
+        // not followed by a close bold tag
         ."(?!<\/b>)"
+        // followed by the endofline or one character that is space comma period dash 0-9 parentheses as a word boundry
         ."((?<=$)|(?=[\s,.-0-9()]))"
+        // case insensitive
         ."/i"
     ;
     $count=0;
