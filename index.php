@@ -52,6 +52,7 @@
             <li>Count the number of items found</li>
         </ul>
 
+        <p>If you have any problems/comments/suggestions please let me know by <a href="https://github.com/mikemacd/gluten-o-matic/issues" target="_blank">creating an issue</a>.
 
         <form action="#" id="theForm" method="post">
             <label>
