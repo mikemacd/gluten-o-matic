@@ -1,4 +1,4 @@
-gluten-o-matic ala "Gluten for Punishment"
+gluten-o-matic a.k.a. "Gluten for Punishment"
 ==========================================
 
 This is a quick tool for people who have gluten sensitivities (of various degrees) to do a quick scan of ingredients lists to see if they might contain gluten or items which may contain gluten or come into contact with gluten.
