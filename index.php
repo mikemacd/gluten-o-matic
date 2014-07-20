@@ -16,12 +16,14 @@
         <script type="text/javascript">
         function checkForm() {
             console&&console.log('check called');
+             $('#response').html("Checking....");
             $.ajax({
                     url:        "check.php"
                     , type:     'POST'
                     , data:     $('#theForm').toJSON()
                     , datatype: "json"
                     , success:  function(data) {
+                        $('#response').html(data);
                         console&&console.log(data);
                     }
                 }
@@ -37,7 +39,9 @@
 
         <h1>Gluten for Punishment</h1>
 
-        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> have gluten,gluten containing ingredients, or ingredients which may have come into contact with gluten.</p>
+        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> have gluten, gluten containing ingredients, or ingredients which may have come into contact with gluten by checking against a <a href="gluten_words.txt">list of suspected gluten containing items</a>.</p>
+
+
 
         <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. You assume full responsibilty for the consequences of any decisions you make based on the response of this tool.</p>
 
@@ -45,20 +49,21 @@
 
         <ul>
             <li>Mark, as bold, which terms were found</li>
+            <li>Count the number of items found</li>
         </ul>
 
 
         <form action="#" id="theForm" method="post">
-            <input type="button" name="check" value="check" onclick="checkForm()">
             <label>
                 <p>Enter the list of ingredients you would like to check</p>
-                <textarea id="ingredients" name="ingredients" rows="20" cols="100"></textarea>
+                <textarea id="ingredients" name="ingredients" rows="10" cols="100"></textarea>
                 <br>
             </label>
-        </form>
+            <input type="button" name="check" value="check" onclick="checkForm()">
 
-        <div id="repsonse">
-        </div>
+            <p>Results</p>
+            <div id="response" style="border:1px solid black;width:50em;"> </div>
+        </form>
 
         <?
         /*
