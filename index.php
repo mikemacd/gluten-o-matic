@@ -45,7 +45,7 @@
 
         <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. You assume full responsibilty for the consequences of any decisions you make based on the response of this tool.</p>
 
-        <h2>Features</h2>
+        <h2>Version 1.1 Features</h2>
 
         <ul>
             <li>Mark, as bold, which terms were found</li>
