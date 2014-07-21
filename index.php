@@ -79,5 +79,8 @@
         </script>
         */
         ?>
+
+	<small>Authored by <a href="mailto:mikemad+gluten-o-matic@gmail.com?subject=Gluten-o-matic%20website" target="_blank">Michael MacDonald</a>. 
+	Source code licensed under GPL <a href="https://github.com/mikemacd/gluten-o-matic" target="_blank">available on github</a></small>
     </body>
 </html>
