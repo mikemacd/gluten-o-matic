@@ -6,3 +6,5 @@ This is a quick tool for people who have gluten sensitivities (of various degree
 This is _not_ a comprehensive tool, just something which may help people do a quick scan. 
 
 Use at your own peril.
+
+Currently accessible via http://www.maven.ca/gluten-o-matic/ 
