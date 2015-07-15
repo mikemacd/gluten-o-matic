@@ -9,5 +9,4 @@ Use at your own peril.
 
 Currently accessible via http://www.maven.ca/gluten-o-matic/ 
 
-
 Let me know if you want features added.
