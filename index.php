@@ -52,7 +52,8 @@
             <li>Count the number of items found</li>
         </ul>
 
-        <p>If you have any problems/comments/suggestions please let me know by <a href="https://github.com/mikemacd/gluten-o-matic/issues" target="_blank">creating an issue</a>.
+        <p>If you have any problems/comments/suggestions please let me know by 
+        <a href="https://github.com/mikemacd/gluten-o-matic/issues" target="_blank">creating an issue</a>.
 
         <form action="#" id="theForm" method="post">
             <label>
@@ -66,7 +67,7 @@
             <div id="response" style="border:1px solid black;width:50em;"> </div>
         </form>
 
-        <?
+        <?php
         /*
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -80,7 +81,10 @@
         */
         ?>
 
-	<small>Authored by <a href="mailto:mikemad+gluten-o-matic@gmail.com?subject=Gluten-o-matic%20website" target="_blank">Michael MacDonald</a>. 
-	Source code licensed under GPL <a href="https://github.com/mikemacd/gluten-o-matic" target="_blank">available on github</a></small>
+	<small>Authored by 
+	<a href="mailto:mikemad+gluten-o-matic@gmail.com?subject=Gluten-o-matic%20website" 
+	target="_blank">Michael MacDonald</a>. 
+	Source code licensed under GPL <a href="https://github.com/mikemacd/gluten-o-matic" 
+	target="_blank">available on github</a></small>
     </body>
 </html>
