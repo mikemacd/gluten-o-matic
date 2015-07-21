@@ -34,16 +34,23 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+            Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve 
+            your experience.</p>
         <![endif]-->
 
         <h1>Gluten for Punishment</h1>
 
-        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> have gluten, gluten containing ingredients, or ingredients which may have come into contact with gluten by checking against a <a href="gluten_words.txt">list of suspected gluten containing items</a>.</p>
+        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> 
+        have gluten, gluten containing ingredients, or ingredients which may have come into 
+        contact with gluten by checking against a <a href="gluten_words.txt">list of suspected 
+        gluten containing items</a>.</p>
 
 
 
-        <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. You assume full responsibilty for the consequences of any decisions you make based on the response of this tool.</p>
+        <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. 
+        You assume full responsibilty for the consequences of any decisions you make based 
+        on the response of this tool.</p>
 
         <h2>Version 1.1 Features</h2>
 
