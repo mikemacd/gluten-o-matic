@@ -18,9 +18,9 @@ foreach ($lines as $badword) {
         ."("
         // match the word, escaping any slashes
         . str_replace(
-            "/"
-            ,"\/"
-            ,chop($badword) 
+            "/" ,
+            "\/" ,
+            chop($badword) 
         )
         // end capture the word
         .")"
@@ -34,11 +34,11 @@ foreach ($lines as $badword) {
     ;
     $count=0;
     $_REQUEST["ingredients"] = preg_replace(
-        $pattern
-        , "<b>$2</b>"
-        , $_REQUEST["ingredients"]
-        , -1
-        , $count
+        $pattern ,
+        "<b>$2</b>" ,
+        $_REQUEST["ingredients"] ,
+        -1 ,
+        $count
     );
     $total_found+=$count;
 }
