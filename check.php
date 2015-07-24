@@ -42,4 +42,5 @@ foreach ($lines as $badword) {
     );
     $total_found+=$count;
 }
-echo $total_found ." words found<br><br>".$_REQUEST["ingredients"] ;
+echo $total_found ." words found<br><br>".$_REQUEST["ingredients"];
+
