@@ -14,7 +14,8 @@
         <script src="js/jquery.toJSON.min.js"></script>
 
         <script type="text/javascript">
-        function checkForm() {
+        function checkForm()
+        {
             console&&console.log('check called');
              $('#response').html("Checking....");
             $.ajax({
@@ -34,22 +35,20 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
-            Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve 
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser.
+            Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve
             your experience.</p>
         <![endif]-->
 
         <h1>Gluten for Punishment</h1>
 
-        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em> 
-        have gluten, gluten containing ingredients, or ingredients which may have come into 
-        contact with gluten by checking against a <a href="gluten_words.txt">list of suspected 
+        <p>This is a simple tool to check to see if a submitted ingredient list <em>might</em>
+        have gluten, gluten containing ingredients, or ingredients which may have come into
+        contact with gluten by checking against a <a href="gluten_words.txt">list of suspected
         gluten containing items</a>.</p>
 
-
-
-        <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril. 
-        You assume full responsibilty for the consequences of any decisions you make based 
+        <p><b>WARNING:</b> This is not a comprehensive tool. Use at your own peril.
+        You assume full responsibilty for the consequences of any decisions you make based
         on the response of this tool.</p>
 
         <h2>Version 1.1 Features</h2>
@@ -59,7 +58,7 @@
             <li>Count the number of items found</li>
         </ul>
 
-        <p>If you have any problems/comments/suggestions please let me know by 
+        <p>If you have any problems/comments/suggestions please let me know by
         <a href="https://github.com/mikemacd/gluten-o-matic/issues" target="_blank">creating an issue</a>.
 
         <form action="#" id="theForm" method="post">
@@ -88,10 +87,10 @@
         */
         ?>
 
-	<small>Authored by 
-	<a href="mailto:mikemad+gluten-o-matic@gmail.com?subject=Gluten-o-matic%20website" 
-	target="_blank">Michael MacDonald</a>. 
-	Source code licensed under GPL <a href="https://github.com/mikemacd/gluten-o-matic" 
-	target="_blank">available on github</a></small>
+    <small>Authored by
+    <a href="mailto:mikemad+gluten-o-matic@gmail.com?subject=Gluten-o-matic%20website"
+    target="_blank">Michael MacDonald</a>.
+    Source code licensed under GPL <a href="https://github.com/mikemacd/gluten-o-matic"
+    target="_blank">available on github</a></small>
     </body>
 </html>

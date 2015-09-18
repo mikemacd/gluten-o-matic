@@ -1,6 +1,6 @@
 <?php
 
-require_once "dBug.class.php";
+require_once 'dBug.class.php';
 
 $lines = file('gluten_words.txt');
 
@@ -43,4 +43,3 @@ foreach ($lines as $badword) {
     $total_found+=$count;
 }
 echo $total_found ." words found<br><br>".$_REQUEST["ingredients"];
-
